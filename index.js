@@ -26,6 +26,17 @@ app.get('/test', (req, res) => {
   res.render('test')
 });
 
+app.get('/login', (req, res) => {
+  res.render('login')
+});
+
+app.get('/register', (req, res) => {
+  res.render('register')
+});
+
+app.get('/customer/customer-store', (req, res) => {
+  res.render('/customer/customer-store')
+});
 
 app.get('*', (req, res) => {
   res.render('404')
