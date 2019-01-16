@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-
+const buyGroupListData = require('./json/buyGroupList.json')
 //=========
 // SETTINGS
 //=========
@@ -34,8 +34,8 @@ app.get('/register', (req, res) => {
   res.render('register')
 });
 
-app.get('/customer/customer-store', (req, res) => {
-  res.render('/customer/customer-store')
+app.get('/customer', (req, res) => {
+  res.render('customer/customer-index',{buyGroupListData:buyGroupListData})
 });
 
 app.get('*', (req, res) => {
