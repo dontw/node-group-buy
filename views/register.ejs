@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<% include ./partials/header.ejs %>
+<title>index</title>
+<body>
+<% include ./partials/nav.ejs %>
+
+<div class="login-bottom" >
+
+    <div class="card text-center login-card">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                    <a class="nav-link login" href="/login">登入</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">註冊</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title" style="text-align:center;">註冊</h5>
+            <!-- acc input -->
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <!-- pwd input -->
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <!-- login button -->
+            <a href="#" class="btn btn-primary">申請</a>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
